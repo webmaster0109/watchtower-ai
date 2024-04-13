@@ -166,7 +166,7 @@ const HomePage = (props: Props) => {
                 </Button>
               </PopoverTrigger>
               <PopoverContent>
-                <Slider max={1} min={0} step={0.2} defaultValue={[volume]} onValueCommit={(val)=>{
+                <Slider max={1} min={0} step={0.4} defaultValue={[volume]} onValueCommit={(val)=>{
                   setVolume(val[0]);
                   beep(val[0]);
                 }} />
@@ -180,7 +180,7 @@ const HomePage = (props: Props) => {
         </div>
       </div>
       {loading && <div className='z-50 absolute w-full h-full flex items-center justify-center bg-primary-foreground'>
-        Getting things ready . . . <Rings height={50} color='red' />     
+        Watchtower AI designed by Sanju Thapa . . . <Rings height={50} color='red' />     
       </div>}
     </div>
   )
